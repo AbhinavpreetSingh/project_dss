@@ -204,7 +204,7 @@ public class SkiRideUploader {
     	int dayId = ran.nextInt(7) + 1;
     	String dId = Integer.toString(dayId);
     	
-    	String url = "http://localhost:9090/coen6317/skiers/" + rId + "/seasons/" + season + "/days/" + dId + "/skiers/" + sId;
+    	String url = "http://168.138.67.254:8080/coen6317/skiers/" + rId + "/seasons/" + season + "/days/" + dId + "/skiers/" + sId;
         SkiRideUploader uploader = new SkiRideUploader(url);
         try {
             uploader.run();
