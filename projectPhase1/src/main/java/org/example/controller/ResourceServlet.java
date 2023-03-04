@@ -125,7 +125,8 @@ public class ResourceServlet extends HttpServlet {
 		
 		// Handle the valid input
 		response.setStatus(HttpServletResponse.SC_CREATED);
-	    out.print("Event Added");
+	    	PrintWriter out = response.getWriter();
+	    	out.print("Event Added");
     }
 }
 
